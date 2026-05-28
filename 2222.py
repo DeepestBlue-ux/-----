@@ -198,6 +198,7 @@ class AlienInvasionGame:
 
     def move_enemy_bullets(self):
         for bullet in list(self.enemy_bullets): 
+            
             self.canvas.move(bullet, 0, 5)
             bbox = self.canvas.bbox(bullet)
             if not bbox or bbox[1] > HEIGHT:
@@ -273,3 +274,5 @@ if __name__ == "__main__":
     app = tk.Tk()
     AlienInvasionGame(app)
     app.mainloop()
+    #游戏结束
+print("end the game")
